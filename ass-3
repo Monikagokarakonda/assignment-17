@@ -1,0 +1,12 @@
+//Write a c program to print factorial of n.
+#include<stdio.h>
+void main()
+{
+	int n,i;
+	long int fact=1;
+	printf("enter the  value for factorial that you want:");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	     fact=fact*i;
+	printf("factorial of the %d:%ld",n,fact);
+}
