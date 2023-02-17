@@ -1,0 +1,13 @@
+//Write a c program to print nth multiplication table.
+#include<stdio.h>
+void main()
+{
+	int i,n,m;
+	printf("enter the multiplication of the number you want:");
+	scanf("%d",&n);
+	printf("enter the no.of steps for the table:");
+	scanf("%d",&m);
+	printf("\ntable of %d:",n#);
+	for(i=1;i<=m;i++)
+    	printf("\n%d*%d=%d",n,i,n*i);
+}
