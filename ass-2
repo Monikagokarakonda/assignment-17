@@ -1,0 +1,23 @@
+//Write a c program to print all those numbers from 1 upto n which are divisible by k and also print evensum and oddsum from those divisible.
+#include<stdio.h>
+void main()
+{
+	int i,n,k,x=0,y=0;
+	printf("enter the n value i.e the last number you want to check:");
+	scanf("%d",&n);
+	printf("enter the number:");
+	scanf("%d",&k);
+	for(i=1;i<=n;i++)
+	{
+	if(i%k==0)
+	{
+		printf("%d ",i);
+	    	if(i%2==0)
+			    x=x+i;
+	       else
+	            y=y+i;
+	}
+    }
+	printf("\nsum of the even that divisible by %d upto %d:%d",k,n,x);
+	printf("\nsum of the odd that divisible by %d upto %d:%d",k,n,y);
+}
